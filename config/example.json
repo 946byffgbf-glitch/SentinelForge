@@ -1,0 +1,13 @@
+{
+  "project": "SentinelForge",
+  "scope": {
+    "targets": ["example.local"],
+    "notes": "Replace with systems you own or have written permission to test."
+  },
+  "http_timeout_seconds": 8,
+  "scan_defaults": {
+    "ports": [22, 80, 443, 8080],
+    "timeout_seconds": 0.5,
+    "max_workers": 16
+  }
+}

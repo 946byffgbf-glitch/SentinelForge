@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinelforge"
+version = "0.1.0"
+description = "Modular security assessment toolkit for authorized defensive testing"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "SentinelForge contributors"}]
+dependencies = ["requests>=2.31.0"]
+
+[project.scripts]
+sentinelforge = "sentinelforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sentinelforge*"]
